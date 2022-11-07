@@ -1,0 +1,201 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.header{
+    display:flex;
+    justify-content: center;
+}
+
+.wallet {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.wallet-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.wallet-close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.wallet-close-button:hover {
+    background-color: darkgray;
+}
+
+.wallet-show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+#expense-card{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    row-gap: 30px;
+    flex-direction: column;
+    background-color:lightgoldenrodyellow;
+    padding:2%;
+    overflow: auto;
+    height:400px;
+}
+.expense-card-details{
+    display: flex;
+    justify-content: space-between;
+    background-color:#ccc;
+    padding:2%;
+}
+.wallet-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logout-flex{
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+   
+}
+.logout-div{
+    background: wheat;
+    padding: 0.5%;
+    border-radius: 5px;
+    font-weight: 900;
+}
+.heading{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.main{
+    height: 30%;
+    background-color: blueviolet;
+}
+
+.wallet-container{
+    height: 70%;
+    background-color: wheat;
+}
+.trigger{
+
+    width: 10rem;
+
+    height: 3rem;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 5%;
+
+    font-size: medium;
+
+    color: blueviolet;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+
+.wallet-trigger{
+
+    width: 10rem;
+
+    height: 3rem;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 5%;
+
+    font-size: medium;
+
+    color: blueviolet;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.add-transaction-button{
+    position: relative;
+    top:-25px
+}
+
+.add-budget-button{
+    position: relative;
+    top:-25px
+}
